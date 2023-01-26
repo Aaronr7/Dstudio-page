@@ -1,0 +1,281 @@
+header{
+  width: 100%;
+}
+
+.nav {
+  min-height: 8vh;
+  background-color: var(--main-dark);
+  width: 100vw;
+  display: flex;
+  align-content: center;
+  box-shadow: 0px 4px 25px -4px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: 0px 4px 25px -4px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 0px 4px 25px -4px rgba(0, 0, 0, 0.52);
+}
+
+.logo-container {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-content: center;
+}
+
+.logo-container a {
+  /* display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column; */
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.logo {
+  min-height: 2.4rem;
+}
+
+.hero {
+  height: 64vh;
+}
+
+.hero-wrapper {
+  margin: 0 1rem;
+}
+
+.element-container {
+  position: absolute;
+  height: calc(64vh - 10.56rem);
+  width: 100vw;
+  opacity: 0.62;
+  /* border-radius: 40px; */
+
+  /* background: linear-gradient(
+    45deg,
+    var(--main-dark) 0%,
+    var(--alt-slight) 35%,
+    var(--main-light) 100%
+  ); */
+
+  /* filter: blur(4); */
+
+  top: 15rem;
+  left: 0;
+  overflow: hidden;
+}
+
+.ec-img {
+  width: 152%;
+}
+
+/* animation: rotatecircle 5s ease-in-out; */
+/* @keyframes rotatecircle {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+.stars {
+  position: absolute;
+  top: 7rem;
+  left: 20rem;
+  height: 60px;
+  width: 60px;
+  animation: updown 3s 2 cubic-bezier(0.265, 0.34, 0.24, 1);
+}
+
+@keyframes updown {
+  0% {
+  }
+
+  25% {
+    transform: translateY(0.5rem);
+  }
+
+  50% {
+    transform: translateY(0.62rem);
+  }
+
+  75% {
+  }
+
+  100% {
+  }
+}
+
+.hero-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.4rem;
+}
+
+.hc-spacer1 {
+  height: 2.12vh;
+  width: 40%;
+  background-color: transparent;
+}
+
+.hero-container div h1 {
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  color: var(--grey-title);
+  margin: 0;
+}
+
+.hero-container div h1 span {
+  color: var(--main-medium);
+}
+
+.hero-container div {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.hero-container .paradiv {
+  margin-top: 0;
+}
+
+.hero-container .paradiv p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--grey-subt);
+}
+
+.hero-container .paradiv p:nth-child(1) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero-container .paradiv p:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero-container .paradiv p:nth-child(3) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero-container .hctadiv {
+  margin-top: 1.46rem;
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  font-family: "Inter";
+}
+
+.hero-cta {
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  background-color: var(--main-medium);
+  color: #faf0ff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* Media queries for small screens phone  */
+@media screen and (max-width: 23.5rem) {
+  .hero {
+    height: 90vh;
+  }
+
+  .stars {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* Media queries for tablet screens 37.5rem */
+@media screen and (min-width: 600px) {
+  .hero {
+    height: 62.28vh;
+    overflow-x: hidden;
+  }
+
+  .logo {
+    height: 3.5rem;
+  }
+
+  .hc-spacer1 {
+    height: 2.34vh;
+  }
+
+  .hero-container {
+    padding-top: 3.2rem;
+    overflow: hidden;
+  }
+
+  .hero-container div h1 {
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .hero-container div h1 span {
+    color: var(--main-medium);
+  }
+
+  .hero-container div {
+    margin-right: 1.4rem;
+    margin-left: 1.4rem;
+  }
+
+  .hero-container .paradiv {
+    margin-top: 0;
+  }
+
+  .hero-container .paradiv p {
+    font-size: 2.2rem;
+    color: var(--grey-subt);
+  }
+
+  .hero-container .paradiv p:nth-child(1) {
+    margin-bottom: 0.491rem;
+  }
+
+  .hero-container .paradiv p:nth-child(2) {
+    margin-bottom: 0.491rem;
+  }
+
+  .hero-container .paradiv p:nth-child(3) {
+    margin-bottom: 0.491rem;
+  }
+
+  .element-container {
+    height: calc(80vh - 10.56rem);
+    overflow: hidden;
+    z-index: -1;
+    top: 14rem;
+    left: 0rem;
+  }
+
+  .element-container .ec-img {
+    width: 100%;
+  }
+
+  .hero-container .hctadiv {
+    margin-top: 1.6rem;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    font-family: "Inter";
+  }
+
+  .hero-cta {
+    padding: 0.88rem 1.2rem;
+    font-size: 1.8ch;
+    width: 16ch;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .stars {
+    top: 8.74rem;
+    left: 40rem;
+    height: 80px;
+    width: 80px;
+    display: none;
+  }
+}

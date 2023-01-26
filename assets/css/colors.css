@@ -1,0 +1,9 @@
+:root {
+    --grey-title:#333;
+    /* grey subt antes #333 */
+    --grey-subt: #444; 
+    --main-dark: #2C1934;
+    --main-medium: #64277D;
+    --alt-slight: #FAF0FF;
+    --alt-bold: #F36AFF;
+  }

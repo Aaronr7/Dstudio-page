@@ -1,0 +1,138 @@
+.statement{
+    height: 96vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.st-bgbox{
+    width: 94vw;
+    min-height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(from 31.03deg at 0% 68.57%, rgba(243, 106, 255, 0.63) 0deg,
+                             rgba(243, 106, 255, 0.63) 16.08deg, rgba(30, 26, 53, 0.18) 91.88deg,
+                              rgba(30, 26, 53, 0.87) 170.63deg, rgba(243, 106, 255, 0.39) 294.38deg,
+                                rgba(243, 106, 255, 0.63) 360deg),
+     url('../img/bluemilky-guillaume-meurice-large.jpg');
+    /* Photo by Guillaume Meurice: https://www.pexels.com/photo/blue-milky-way-photo-2873671/ */
+     /* original image link medium quality https://images.pexels.com/photos/2873671/pexels-photo-2873671.jpeg?cs=srgb&dl=pexels-guillaume-meurice-2873671.jpg&fm=jpg&w=1280&h=1697&_gl=1*xekfsy*_ga*MzIxMTcwODEyLjE2NzE5MjU0NDY.*_ga_8JE65Q40S6*MTY3MzY0MTU1OS4zLjAuMTY3MzY0MTU1OS4wLjAuMA.. */
+
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.st-titlediv{
+    margin-left: .8rem;
+    margin-right: .8rem;
+    text-align: center;
+    
+}
+
+.st-title{
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    line-height: 2.38rem ;
+    font-weight: 700;
+    font-size: 2.46rem;
+    color: #fff;
+}
+
+.st-spacer{
+    height: 0.8rem;
+    width: 100%;
+}
+
+.st-p{
+    margin-top: 0.6rem;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+/* .st-listdiv{
+    margin-left: .8rem;
+    margin-right: .8rem;
+} */
+
+.st-list{
+    list-style: none;
+}
+
+.st-el{
+    margin: 10px;
+    padding: 8px 16px 8px 16px;
+    /* padding-top: clamp(6px, 8px, 9px);
+    padding-right: clamp(14px, 16px, 17px);
+    padding-bottom: clamp(6px, 8px, 9px);
+    padding-left: clamp(14px, 16px, 17px); */
+    background-color: #F8F9FA;
+    border-radius: 10px;
+    color: #313131;
+    font-weight: 600;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emoji{
+    padding: 0.1rem;
+    padding-right: 0.4rem;
+    font-size: 1.6rem;
+}
+
+.st-el h4{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Media queries for small screens phone  */
+@media screen and (max-width: 23.5rem) {
+    .st-el{
+        padding: 6px 14px 6px 14px;
+    }
+
+    .st-title{
+        font-size: 2rem;
+    }
+}
+
+/* Media queries for small tablet screens 37.5rem */
+@media screen and (min-width: 600px) {
+    .statement{
+        height: 82vh; 
+    }
+
+    .statement .st-bgbox{
+        min-height: 66vh;
+    }
+
+    .st-titlediv{
+        margin-left: 1.52rem;
+        margin-right: 1.52rem;
+    }
+
+    .st-title{
+        font-size: 2.72rem;
+    }
+
+    .st-p{
+        font-size: 2.32rem;
+    }
+
+    .st-el{
+        padding: 5.2px 10px 5.2px 10px;
+        border-radius: 8px;
+    }
+
+    .st-el h4{
+        font-size: 1.264rem;
+    }
+}

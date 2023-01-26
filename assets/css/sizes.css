@@ -1,0 +1,4 @@
+:root{
+    --splan-height: 68vh;
+    --splan-width: calc(var(--card-height) / 1.5);
+}
