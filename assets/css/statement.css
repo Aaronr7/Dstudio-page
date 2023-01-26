@@ -1,3 +1,13 @@
+:root{
+    --clr-for-cgradient1:rgba(243, 106, 255, 0.63);
+    --clr-for-cgradient2:rgba(30, 26, 53, 0.18);
+    --clr-for-cgradient3:rgba(30, 26, 53, 0.87);
+    --clr-for-cgradient4:rgba(243, 106, 255, 0.39);
+
+    --clr-grey-p-alt:#313131;
+    --clr-bg-p-alt:#F8F9FA;
+}
+
 .statement{
     height: 96vh;
     background-color: #fff;
@@ -13,10 +23,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: conic-gradient(from 31.03deg at 0% 68.57%, rgba(243, 106, 255, 0.63) 0deg,
-                             rgba(243, 106, 255, 0.63) 16.08deg, rgba(30, 26, 53, 0.18) 91.88deg,
-                              rgba(30, 26, 53, 0.87) 170.63deg, rgba(243, 106, 255, 0.39) 294.38deg,
-                                rgba(243, 106, 255, 0.63) 360deg),
+    background: conic-gradient(from 31.03deg at 0% 68.57%, var(--clr-for-cgradient1) 0deg,
+                             var(--clr-for-cgradient1) 16.08deg, var(--clr-for-cgradient2) 91.88deg,
+                              rgba(30, 26, 53, 0.87) 170.63deg, var(--clr-for-cgradient4) 294.38deg,
+                                var(--clr-for-cgradient1) 360deg),
      url('../img/bluemilky-guillaume-meurice-large.jpg');
     /* Photo by Guillaume Meurice: https://www.pexels.com/photo/blue-milky-way-photo-2873671/ */
      /* original image link medium quality https://images.pexels.com/photos/2873671/pexels-photo-2873671.jpeg?cs=srgb&dl=pexels-guillaume-meurice-2873671.jpg&fm=jpg&w=1280&h=1697&_gl=1*xekfsy*_ga*MzIxMTcwODEyLjE2NzE5MjU0NDY.*_ga_8JE65Q40S6*MTY3MzY0MTU1OS4zLjAuMTY3MzY0MTU1OS4wLjAuMA.. */
@@ -70,9 +80,9 @@
     padding-right: clamp(14px, 16px, 17px);
     padding-bottom: clamp(6px, 8px, 9px);
     padding-left: clamp(14px, 16px, 17px); */
-    background-color: #F8F9FA;
+    background-color: var(--clr-bg-p-alt);
     border-radius: 10px;
-    color: #313131;
+    color: var(--clr-grey-p-alt);
     font-weight: 600;
     border-radius: 5px;
 

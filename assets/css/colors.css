@@ -1,9 +1,11 @@
 :root {
-    --grey-title:#333;
+    --clr-grey-title:#333;
     /* grey subt antes #333 */
-    --grey-subt: #444; 
-    --main-dark: #2C1934;
-    --main-medium: #64277D;
-    --alt-slight: #FAF0FF;
-    --alt-bold: #F36AFF;
+    --clr-grey-subtitle: #444; 
+    --clr-main-dark: #2C1934;
+    --clr-main-medium: #64277D;
+    --clr-alt-ultralight: #FAF0FF;
+    --clr-alt-bold: #F36AFF;
+    --clr-alt-dark1: rgba(30, 26, 53, 0.8);
+    --clr-alt-dark2: rgba(30, 26, 53, 1);
   }

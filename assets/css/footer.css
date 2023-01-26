@@ -1,5 +1,5 @@
 .footer{
-    background-color: #111;
+    background-color: var(--clr-alt-dark2);
     min-height: 5rem;
 }
 

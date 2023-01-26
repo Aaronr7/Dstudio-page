@@ -4,7 +4,7 @@ header{
 
 .nav {
   min-height: 8vh;
-  background-color: var(--main-dark);
+  background-color: var(--clr-main-dark);
   width: 100vw;
   display: flex;
   align-content: center;
@@ -47,16 +47,6 @@ header{
   height: calc(64vh - 10.56rem);
   width: 100vw;
   opacity: 0.62;
-  /* border-radius: 40px; */
-
-  /* background: linear-gradient(
-    45deg,
-    var(--main-dark) 0%,
-    var(--alt-slight) 35%,
-    var(--main-light) 100%
-  ); */
-
-  /* filter: blur(4); */
 
   top: 15rem;
   left: 0;
@@ -120,12 +110,12 @@ header{
 .hero-container div h1 {
   font-size: 2.6rem;
   line-height: 2.6rem;
-  color: var(--grey-title);
+  color: var(--clr-grey-title);
   margin: 0;
 }
 
 .hero-container div h1 span {
-  color: var(--main-medium);
+  color: var(--clr-main-medium);
 }
 
 .hero-container div {
@@ -140,7 +130,7 @@ header{
 .hero-container .paradiv p {
   font-size: 1.6rem;
   line-height: 2rem;
-  color: var(--grey-subt);
+  color: var(--clr-grey-subtitle);
 }
 
 .hero-container .paradiv p:nth-child(1) {
@@ -168,7 +158,7 @@ header{
 .hero-cta {
   padding: 0.7rem 1rem;
   text-decoration: none;
-  background-color: var(--main-medium);
+  background-color: var(--clr-main-medium);
   color: #faf0ff;
   font-size: 0.8rem;
   font-weight: 600;
@@ -188,7 +178,7 @@ header{
 }
 
 /* Media queries for tablet screens 37.5rem */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5rem) {
   .hero {
     height: 62.28vh;
     overflow-x: hidden;
@@ -212,10 +202,6 @@ header{
     margin-bottom: 0.2rem;
   }
 
-  .hero-container div h1 span {
-    color: var(--main-medium);
-  }
-
   .hero-container div {
     margin-right: 1.4rem;
     margin-left: 1.4rem;
@@ -227,7 +213,6 @@ header{
 
   .hero-container .paradiv p {
     font-size: 2.2rem;
-    color: var(--grey-subt);
   }
 
   .hero-container .paradiv p:nth-child(1) {

@@ -50,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FAF0FF;
+    background-color: var(--clr-alt-ultralight);
     border-radius: 90px;
     height: 90px;
     width: 90px; 
