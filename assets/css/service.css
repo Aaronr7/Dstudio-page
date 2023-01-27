@@ -1,5 +1,7 @@
 .scsection{
     margin: 0 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2.2rem;
 }
 
 .sc_container{
@@ -12,6 +14,7 @@
     margin-top: 0;
     text-align: center;
     font-weight: bold;
+    font-size: 1.32rem;
 }
 
 .sc_list{
@@ -24,8 +27,7 @@
 }
 
 .c_element{
-    margin-bottom: 1.2rem;
-    padding: 1rem .6rem;
+    padding: 0.4rem .6rem;
     width: 300px;
     text-align: center;
     display: flex;
@@ -64,20 +66,24 @@
 .hidden{
     opacity: 0.2;
     filter: blur(5px);
-    transform: translateY(-30%);
-    transition: all 2s;
+    /* transform: translateY(-30%); */
+    transition: all 2s cubic-bezier(0.65,0,0.35,1);
 }
 
 .show{
     opacity: 1;
     filter: blur(0);
-    transform: translateY(0);
+    /* transform: translateY(0); */
+}
+
+.c_element:nth-child(1) {
+    transition-delay: 1100ms;
 }
 
 .c_element:nth-child(2) {
-    transition-delay: 200ms;
+    transition-delay: 1300ms;
 }
 
 .c_element:nth-child(3) {
-    transition-delay: 400ms;
+    transition-delay: 1500ms;
 }
