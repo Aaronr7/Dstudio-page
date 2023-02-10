@@ -170,6 +170,10 @@ header{
   .hero {
     height: 90vh;
   }
+  
+  .element-conatiner{
+    height: 430px;
+  }
 
   .stars {
     height: 50px;
